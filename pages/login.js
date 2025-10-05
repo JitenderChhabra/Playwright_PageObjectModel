@@ -8,6 +8,7 @@ exports.LoginPage = class LoginPage{
         this.login_button = page.getByRole('button', { name: ' Login' });
     }
 
+    //Login function, we can even pass URL and replace it through run time.
     async gotoLoginPage(){
          await this.page.goto('https://the-internet.herokuapp.com/login ');
     }
